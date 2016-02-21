@@ -1,9 +1,11 @@
-#include <chalice.h>
+#include <codex.h>
 #include <iostream>
+#include <memory>
 
 int main(void)
 {
-  std::cout << "Sluggo!" << std::endl;
+  auto codex_engine = std::make_shared<Codex::Engine>("Hi There");
+  codex_engine->Run();
 
   return 0;
 }
